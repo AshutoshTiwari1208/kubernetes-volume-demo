@@ -14,7 +14,13 @@ spec:
     spec:
       containers:
         - name: story
-          image: ashutosh3309/kube-vol-demo:v1
+          image: ashutosh3309/kube-vol-demo:v2
+          env:
+            - name: STORY_FOLDER
+              valueFrom:
+                configMapKeyRef:
+                  name: story-config
+                  key: folder
           volumeMounts:
             - mountPath: /app/story
               name: story-vol
