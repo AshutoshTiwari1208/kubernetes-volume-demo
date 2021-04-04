@@ -1,5 +1,14 @@
 # HOW TO RUN THIS APP IN k8's CLUSTER
 
+Routes Available:
+
+=> get /story
+
+=> post /story
+    body: {
+        "text": "Store this thought"
+    }
+
 ## Follow the steps 👇
 
 1. Download Minikube & kubectl
