@@ -15,9 +15,13 @@ Routes Available:
 
 2. ```minikube start```
 
-3. ```kubectl apply -f deployment.yaml```
+3. ```kubectl apply -f story-pv.yaml```
 
-4. ```kubectl apply -f service.yaml```
+4. ```kubectl apply -f story-pvc.yaml```
+
+5. ```kubectl apply -f deployment.yaml```
+
+6. ```kubectl apply -f service.yaml```
 
 > Now deployment and service are created, to expose it we need to give an additional command in minikube
 
